@@ -15,4 +15,46 @@ public class Carros {
     private double cilindraje = 0;
     private boolean automatico = false;
     
+     public int getnumerosPurtas (){
+            return numerosPuertas;
+        }
+        
+        public void setnumerosPuertas (int numerosPuertas){
+            this.numerosPuertas = numerosPuertas;
+        }
+        
+        public String gettipoGasolina (){
+            return tipoGasolina;
+        }
+        
+        public void settipoGasolina (int año){
+            this.año = año;
+        }
+        
+        public double getprecio (){
+            return precio;
+        }
+        
+        public void setprecio (double precio){
+            this.precio = precio;
+        }
+        
+        public boolean getdisponible (){
+            return disponible;
+        }
+        
+        public void setdisponible (boolean disponible){
+            this.disponible = disponible;
+            
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
