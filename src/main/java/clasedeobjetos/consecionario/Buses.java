@@ -10,4 +10,8 @@ package clasedeobjetos.consecionario;
  */
 public class Buses {
     
+    private int numeroPasajeros = 0;
+    private String tipoServicio = "";
+    private double velMax = 0;
+    private boolean wifi = true;        
 }
