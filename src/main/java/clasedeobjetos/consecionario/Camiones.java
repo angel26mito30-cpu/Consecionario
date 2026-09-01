@@ -10,4 +10,9 @@ package clasedeobjetos.consecionario;
  */
 public class Camiones {
     
+    private int numeroRuedas = 0;
+    private String carroceria = "";
+    private double carga = 0;
+    private boolean Camarote = true;
+    
 }
