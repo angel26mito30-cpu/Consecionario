@@ -10,4 +10,9 @@ package clasedeobjetos.consecionario;
  */
 public class Motos {
     
+    private int numeroRuedas = 0;
+    private String tipoMotos = "";
+    private double cilindraje = 0;
+    private boolean eléctrica = false;
+    
 }
