@@ -28,23 +28,23 @@ public class Carros {
         }
         
         public void settipoGasolina (int año){
-            this.año = año;
+            this.tipoGasolina = tipoGasolina;
         }
         
-        public double getprecio (){
-            return precio;
+        public double getcilindraje (){
+            return cilindraje;
         }
         
-        public void setprecio (double precio){
-            this.precio = precio;
+        public void setcilindraje (double cilindraje){
+            this.cilindraje = cilindraje;
         }
         
-        public boolean getdisponible (){
-            return disponible;
+        public boolean getautomatico (){
+            return automatico;
         }
         
-        public void setdisponible (boolean disponible){
-            this.disponible = disponible;
+        public void setautomatico (boolean automatico){
+            this.automatico = automatico;
             
         }
     
