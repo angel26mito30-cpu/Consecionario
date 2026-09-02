@@ -11,8 +11,44 @@ package clasedeobjetos.consecionario;
 public class Camiones {
     
     private int numeroRuedas = 0;
-    private String carroceria = "";
+    protected String carroceria = "";
     private double carga = 0;
     private boolean Camarote = true;
+    
+    public int getnumeroRuedas (){
+        return numeroRuedas;
+        
+    }
+    
+    public void setnumeroRuedas (int numeroRuedas){
+        this.numeroRuedas = numeroRuedas;
+        
+    }
+    
+    public String getcarroceria (){
+        return carroceria;
+        
+    }
+    
+    public void setcaarroceria (String carroceria){
+        this.carroceria = carroceria;
+    }
+    
+    public double getcarga (){
+        return carga;
+    }
+    
+    public void setcarga (double carga){
+        this.carga = carga;
+        
+    }
+    
+    public boolean getcamarote (){
+        return camarote;
+        
+    }
+    
+    
+    
     
 }

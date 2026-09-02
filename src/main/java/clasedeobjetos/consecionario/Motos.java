@@ -8,43 +8,22 @@ package clasedeobjetos.consecionario;
  *
  * @author angel
  */
-public class Motos {
+public class Motos extends Vehiculos{
     
     protected int numeroRuedas = 0;
     private String tipoMotos = "";
     private double cilindraje = 0;
-    private boolean eléctrica = false;
+    private boolean electrica = false;
     
-     public int getnumerosRuedas (){
-            return numeroRuedas;
-        }
+    public Motos (String marca,int año,double precio,boolean disponible,int numeroRuedas,String tipoMotos,double cilindraje,boolean electrica){
+      
+        super(marca, año, precio, disponible);
         
-        public void setnumeroRuedas (int numeroRuedas){
-            this.numeroRuedas = numeroRuedas;
-        }
-        
-        public String gettipoMotos (){
-            return tipoMotos;
-        }
-        
-        public void settipoMotos (int tipoMotos){
-            this.tipoMotos = this.tipoMotos;
-        }
-        
-        public double getcilindraje (){
-            return cilindraje;
-        }
-        
-        public void setcilindraje (double cilindraje){
-            this.cilindraje = cilindraje;
-        }
-        
-        public boolean getelectrica (){
-            return eléctrica;
-        }
-        
-        public void setelectrica (boolean electrica){
-            this.eléctrica = electrica;
-            
-        }
+        this.numeroRuedas = numeroRuedas;
+        this.tipoMotos = tipoMotos;
+        this.cilindraje = cilindraje;
+        this.electrica = electrica;
+     
+    }      
 }
+ 

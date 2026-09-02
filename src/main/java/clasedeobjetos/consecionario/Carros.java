@@ -47,14 +47,6 @@ public class Carros {
             this.automatico = automatico;
             
         }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     
 }
