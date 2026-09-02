@@ -8,47 +8,21 @@ package clasedeobjetos.consecionario;
  *
  * @author angel
  */
-public class Camiones {
+public class Camiones extends Vehiculos {
     
-    private int numeroRuedas = 0;
+    private int numeroEjes = 0;
     protected String carroceria = "";
     private double carga = 0;
-    private boolean Camarote = true;
+    private boolean camarote = true;
     
-    public int getnumeroRuedas (){
-        return numeroRuedas;
+    public Camiones (String marca, int año, double precio, boolean disponible, 
+           int numeroEjes, String carroceria, double carga, boolean camarote){
         
+        super (marca, año, precio, disponible);
+            this.numeroEjes = numeroEjes;
+            this.carroceria = carroceria;
+            this.carga = carga;
+            this.camarote = camarote;
     }
-    
-    public void setnumeroRuedas (int numeroRuedas){
-        this.numeroRuedas = numeroRuedas;
-        
-    }
-    
-    public String getcarroceria (){
-        return carroceria;
-        
-    }
-    
-    public void setcaarroceria (String carroceria){
-        this.carroceria = carroceria;
-    }
-    
-    public double getcarga (){
-        return carga;
-    }
-    
-    public void setcarga (double carga){
-        this.carga = carga;
-        
-    }
-    
-    public boolean getcamarote (){
-        return camarote;
-        
-    }
-    
-    
-    
     
 }
