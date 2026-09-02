@@ -12,18 +12,21 @@ public class Motos extends Vehiculos{
     
     protected int numeroRuedas = 0;
     private String tipoMotos = "";
-    private double cilindraje = 0;
+    private double kilometraje = 0;
     private boolean electrica = false;
     
-    public Motos (String marca,int año,double precio,boolean disponible,int numeroRuedas,String tipoMotos,double cilindraje,boolean electrica){
-      
-        super(marca, año, precio, disponible);
+    public Motos (String marca, int año, double precio, boolean disponible, 
+           int numeroRuedas, String tipoMotos, double kilometraje, boolean electrica){
         
-        this.numeroRuedas = numeroRuedas;
-        this.tipoMotos = tipoMotos;
-        this.cilindraje = cilindraje;
-        this.electrica = electrica;
-     
-    }      
+        super(marca, año, precio, disponible);
+            this.numeroRuedas = numeroRuedas;
+            this.tipoMotos = tipoMotos;
+            this.kilometraje = kilometraje;
+            this.electrica = electrica;
+            
+    }
+    
 }
- 
+
+
+
