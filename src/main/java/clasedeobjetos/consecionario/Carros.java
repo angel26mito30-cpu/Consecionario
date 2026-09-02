@@ -8,45 +8,20 @@ package clasedeobjetos.consecionario;
  *
  * @author angel
  */
-public class Carros {
+public class Carros extends Vehiculos {
     
     private int numerosPuertas = 0;
     private String tipoGasolina = "";
     private double cilindraje = 0;
     private boolean automatico = false;
     
-     public int getnumerosPurtas (){
-            return numerosPuertas;
-        }
-        
-        public void setnumerosPuertas (int numerosPuertas){
-            this.numerosPuertas = numerosPuertas;
-        }
-        
-        public String gettipoGasolina (){
-            return tipoGasolina;
-        }
-        
-        public void settipoGasolina (int año){
-            this.tipoGasolina = tipoGasolina;
-        }
-        
-        public double getcilindraje (){
-            return cilindraje;
-        }
-        
-        public void setcilindraje (double cilindraje){
-            this.cilindraje = cilindraje;
-        }
-        
-        public boolean getautomatico (){
-            return automatico;
-        }
-        
-        public void setautomatico (boolean automatico){
-            this.automatico = automatico;
-            
-        }
-        
+    public Carros (String marca, int año, double precio, boolean disponible, 
+           int numerosPuertas, String tipoGasolina, double cilindraje, boolean automatico){
     
+    super (marca, año, precio, disponible);
+        this.numerosPuertas = numerosPuertas;
+        this.tipoGasolina = tipoGasolina;
+        this.cilindraje = cilindraje;
+        this.automatico = automatico;
+    }
 }
