@@ -17,29 +17,44 @@ public class Vehiculos {
     
     public Vehiculos (String marca, int año, double precio, boolean disponible) {
         
-    this.marca = marca;
-    this.año = año;
-    this.precio = precio;
-    this.disponible = disponible;
+        this.marca = marca;
+        this.año = año;
+        this.precio = precio;
+        this.disponible = disponible;
     }
     
     public Vehiculos(String marca, int año, double precio) {
 
-    this.marca = marca;
-    this.año = año;
-    this.precio = precio;
-    this.disponible = disponible;
+        this.marca = marca;
+        this.año = año;
+        this.precio = precio;
+        this.disponible = disponible;
     }
     
     public Vehiculos(String marca, double precio) {
-    this.marca = marca;
-    this.precio = precio;
+        this.marca = marca;
+        this.precio = precio;
     }
     
     public Vehiculos (String marca, int año, boolean disponible){
-    this.marca = marca;
-    this.año = año;
-    this.disponible = disponible;
+        this.marca = marca;
+        this.año = año;
+        this.disponible = disponible;
     }
     
+    public Vehiculos (int año, double precio){
+        this.año = año;
+        this.precio = precio;
+    }
+    
+    public Vehiculos ( String marca, int año, double precio){
+        this.marca = marca;
+        this.año = año;
+        this.precio = precio;
+    }
+    
+    public Vehiculos (double precio, boolean disponible){
+        this.precio = precio;
+        this.disponible = disponible;
+    }
 }
