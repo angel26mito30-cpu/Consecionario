@@ -22,10 +22,58 @@ public class Motos extends Vehiculos{
             this.numeroRuedas = numeroRuedas;
             this.tipoMotos = tipoMotos;
             this.kilometraje = kilometraje;
-            this.electrica = electrica;
-            
-    }
+            this.electrica = electrica;   
+        }
     
+        public Motos (String marca, int año, boolean disponible, double kilometraje, int numeroRuedas){
+        
+            super (marca, año, disponible);
+                this.numeroRuedas = 2;
+                this.tipoMotos = "deportiva";
+                this.kilometraje = 10.000;
+                this.electrica = false;        
+        }
+        
+        public Motos (String marca, double precio, String tipoMotos, boolean electrica){
+            
+            super(marca, precio);
+                this.numeroRuedas = 4;
+                this.tipoMotos = "Cuatrimoto";
+                this.kilometraje = 4.000;
+                this.electrica = false;        
+        }
+        
+        public int getnumeroRuedas (){
+            return numeroRuedas;
+        }
+        
+        public void setnumeroRuedas (int numeroRuedas){
+            this.numeroRuedas = numeroRuedas;
+        }
+        
+        public String gettipoMotos (){
+            return tipoMotos;
+        }
+        
+        public void settipoMotos (String tipoMotos){
+            this.tipoMotos = tipoMotos;
+        }
+        
+        public double getkilometraje (){
+            return kilometraje;
+        }
+        
+        public void setkilometraje ( double kilometraje){
+            this.kilometraje = kilometraje;
+        }
+        
+        public boolean getelectrica (){
+            return electrica;
+        }
+        
+        public void setelectrica (boolean electrica){
+            this.electrica = electrica;
+        }
 }
 
 

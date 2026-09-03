@@ -11,6 +11,13 @@ package clasedeobjetos.consecionario;
 public class Consecionario {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Carros carro1 = new Carros ("hyunday", 2013, 80000000, 2500, 4);
+        
+        
+        
+        
+        
+        
     }
 }

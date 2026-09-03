@@ -44,4 +44,35 @@ public class Buses extends Vehiculos {
                 
         }
      
+        public int getnumeroPasajeros (){
+            return numeroPasajeros;
+        }
+        
+        public void setnumeroPasajeros (int numeroPasajeros){
+            this.numeroPasajeros = numeroPasajeros;
+        }
+        
+        public String gettipoServicio (){
+            return tipoServicio;
+        }
+        
+        public void settipoServicio (String tipoServicio){
+            this.tipoServicio = tipoServicio;
+        }
+        
+        public double getvelMax (){
+            return velMax;
+        }
+        
+        public void setvelMax ( double velMax){
+            this.velMax = velMax;
+        }
+        
+        public boolean getwifi (){
+            return wifi;
+        }
+        
+        public void setwifi (boolean wifi){
+            this.wifi = wifi;
+        }
 }
