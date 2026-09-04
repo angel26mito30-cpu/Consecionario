@@ -75,4 +75,12 @@ public class Buses extends Vehiculos {
         public void setwifi (boolean wifi){
             this.wifi = wifi;
         }
+        
+        @Override
+        
+        public String toString(){
+            return "Camiones {" + "marca = " + marca + "año = " + año + "precio = " + getprecio () + "disponible = "
+                    + getdisponible () + "numero Ejes = " + numeroEjes + "carroceria = " + carroceria +
+                    "carga toneladas = " + cargaToneladas + "camarote = " + camarote + "}";
+        }
 }
