@@ -39,6 +39,16 @@ public class Consecionario {
         //Con el tercer constrcutro creamos el ultimo camion con marca, año, precio, si esta disponible, numero de ejes y carroceria
         Camiones camion3 = new Camiones ("kenworth", 2019, 60000000, true, 4, "Volqueta ");
         
+        //Con el tercer constrcutor creamos el primer camion con precio,disponible, si tiene wifi, que servicio es y pasajeros
+        Buses bus1 = new Buses (130000000, true, false, "escolar", 30);
+        
+        //Creamos el segundo camion con ele segundo constructor con marca, año, precio,pasajeros, servicio y si tiene wifi
+        Buses bus2 = new Buses ("Marcopolo", 2020, 210000000, 48, "Turismo", true);
+        
+        // Con el primer constrcutor cramos el ultimo onjetoc con todos los atributos de ese constrcutor
+        Buses bus3 = new Buses ("Scania", 2010, 187000000, true, 50, "Urbano", 80, false);
+        
+        
         
         
         
