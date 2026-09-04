@@ -43,7 +43,7 @@ public class Carros extends Vehiculos {
                 this.automatico = automatico;
         }
         
-        public int getnumeroPuertas (){
+        public int getnumerosPuertas (){
             return numerosPuertas;
         }
         
@@ -78,8 +78,8 @@ public class Carros extends Vehiculos {
         @Override
         
         public String toString(){
-            return "Carros {" + "marca = " + marca + "año = " + año + "precio = " + precio + "disponible = "
-                    + disponible + "numero Puertas = " + numerosPuertas + "tipo Gasolina = " + tipoGasolina +
+            return "Carros {" + "marca = " + marca + "año = " + año + "precio = " + getprecio () + "disponible = "
+                    + getdisponible ()+  "numero Puertas = " + numerosPuertas + "tipo Gasolina = " + tipoGasolina +
                     "cilindraje = " + cilindraje + "automatico = " + automatico + "}";
                     
         }
