@@ -28,18 +28,18 @@ public class Camiones extends Vehiculos {
         public Camiones (int año, double precio, int numeroEjes, double cargaToneladas, boolean camarote){
             
             super (año, precio);
-                this.numeroEjes = 2;
+                this.numeroEjes = numeroEjes;
                 this.carroceria = "Estacas";
-                this.cargaToneladas = 20;
-                this.camarote = false;        
+                this.cargaToneladas = cargaToneladas;
+                this.camarote = camarote;        
         }
         
         public Camiones (String marca, int año, double precio, boolean disponible, int numeroEjes, String carroceria){
             
             super (marca, año, precio, disponible);
-                this.numeroEjes = 5;
-                this.carroceria = "Volqueta";
-                this.cargaToneladas = 30;
+                this.numeroEjes = numeroEjes;
+                this.carroceria = carroceria;
+                this.cargaToneladas = cargaToneladas;
                 this.camarote = true;
         }
     

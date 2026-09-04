@@ -57,4 +57,39 @@ public class Vehiculos {
         this.precio = precio;
         this.disponible = disponible;
     }
+    
+    public String getmarca (){
+            return marca;
+        }
+        
+        public void setmarca (String marca){
+            this.marca = marca;
+        }
+        
+        public int getaño (){
+            return año;
+        }
+        
+        public void setaño (int año){
+            this.año = año;
+        }
+        
+        public double getprecio (){
+            return precio;
+        }
+        
+        public void setprecio ( double precio){
+            this.precio = precio;
+        }
+        
+        public boolean getdisponible (){
+            return disponible;
+        }
+        
+        public void setdisponible (boolean disponible){
+            this.disponible = disponible;
+        }
+        
 }
+
+

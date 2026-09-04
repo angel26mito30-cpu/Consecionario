@@ -25,22 +25,22 @@ public class Carros extends Vehiculos {
             this.automatico = automatico;
         }
     
-        public Carros (String marca, int año, double precio, double cilindraje, int numeroPuertas){
+        public Carros (String marca, int año, double precio, double cilindraje, int numerosPuertas){
             
             super (marca, año, precio);
-            this.numerosPuertas = 4;
+            this.numerosPuertas = numerosPuertas;
             this.tipoGasolina = "Diesel";
             this.cilindraje = cilindraje;
-            this.automatico = false;
+            this.automatico = true;
         }
         
-        public Carros (String marca, double precio, boolean automatico){
-            
-            super (marca, precio);
-            this.numerosPuertas = 2;
-            this.tipoGasolina = "electricidad";
-            this.cilindraje = 0;
-            this.automatico = true;
+        public Carros(String marca, double precio, boolean automatico) {
+
+            super(marca, precio);
+                this.numerosPuertas = 4;
+                this.tipoGasolina = "Gasolina";
+                this.cilindraje = 1.6;
+                this.automatico = automatico;
         }
         
         public int getnumeroPuertas (){
@@ -73,6 +73,15 @@ public class Carros extends Vehiculos {
         
         public void setautomatico (boolean automatico){
             this.automatico = automatico;
+        }
+        
+        @Override
+        
+        public String toString(){
+            return "Carros {" + "marca = " + marca + "año = " + año + "precio = " + precio + "disponible = "
+                    + disponible + "numero Puertas = " + numerosPuertas + "tipo Gasolina = " + tipoGasolina +
+                    "cilindraje = " + cilindraje + "automatico = " + automatico + "}";
+                    
         }
 }
 

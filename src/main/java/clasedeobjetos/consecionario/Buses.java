@@ -28,18 +28,18 @@ public class Buses extends Vehiculos {
         public Buses (String marca, int año, double precio, int numeroPasajeros, String tipoServicio, boolean wifi){
         
             super (marca, año, precio);
-                this.numeroPasajeros = 46;
+                this.numeroPasajeros = numeroPasajeros;
                 this.tipoServicio = "turismo";
                 this.velMax = 80;
-                this.wifi = true;
+                this.wifi = wifi;
         }
         
         public Buses (double precio, boolean disponible, boolean wifi,String tipoServicio, int numeroPasajeros){
                
             super (precio, disponible);
-                this.numeroPasajeros = 30;
+                this.numeroPasajeros = numeroPasajeros;
                 this.tipoServicio = "escolar";
-                this.velMax = 50;
+                this.velMax = velMax;
                 this.wifi = false;
                 
         }
