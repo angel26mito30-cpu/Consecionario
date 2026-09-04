@@ -26,22 +26,22 @@ public class Motos extends Vehiculos{
         }
     
         public Motos (String marca, int año, boolean disponible, double kilometraje, int numeroRuedas){
-        
-            super (marca, año, disponible);
+    
+            super(marca, año, disponible);
                 this.numeroRuedas = numeroRuedas;
-                this.tipoMotos = tipoMotos;
+                this.tipoMotos = "Deportiva";
                 this.kilometraje = kilometraje;
-                this.electrica = false;        
-        }
+                this.electrica = false;
+}
         
         public Motos (String marca, double precio, String tipoMotos, boolean electrica){
-            
+    
             super(marca, precio);
-                this.numeroRuedas = numeroRuedas;
+                this.numeroRuedas = 2;
                 this.tipoMotos = tipoMotos;
-                this.kilometraje = kilometraje;
-                this.electrica = false;        
-        }
+                this.kilometraje = 0;
+                this.electrica = electrica;
+}
         
         public int getnumeroRuedas (){
             return numeroRuedas;
@@ -74,6 +74,15 @@ public class Motos extends Vehiculos{
         public void setelectrica (boolean electrica){
             this.electrica = electrica;
         }
+        
+        @Override
+        
+        public String toString(){
+            return "Motos {" + "marca = " + marca + "año = " + año + "precio = " + getprecio () + "disponible = "
+                    + getdisponible () + "numero Ruedas = " + numeroRuedas + "tipo GMotos = " + tipoMotos +
+                    "kilometraje = " + kilometraje + "electrica = " + electrica + "}";
+        }
+        
 }
 
 

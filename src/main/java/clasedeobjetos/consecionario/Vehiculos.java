@@ -47,12 +47,6 @@ public class Vehiculos {
         this.precio = precio;
     }
     
-    public Vehiculos ( String marca, int año, double precio){
-        this.marca = marca;
-        this.año = año;
-        this.precio = precio;
-    }
-    
     public Vehiculos (double precio, boolean disponible){
         this.precio = precio;
         this.disponible = disponible;
